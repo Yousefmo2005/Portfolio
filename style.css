@@ -440,12 +440,39 @@ ul {
 /* ─── SKILLS ─── */
 
 /* تنسيق شبكة الكروت */
+/* الإعدادات الأساسية للـ Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  /* على الشاشات الكبيرة: الكارت بياخد 350px زي ما تحب */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
   gap: 20px;
-  background-color: #050505; /* خلفية الصفحة */
+  background-color: #050505;
   padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* التابلت والشاشات المتوسطة (أقل من 768px) */
+@media (max-width: 768px) {
+  .skills-grid {
+    /* بنصغر الحد الأدنى لـ 280px عشان يقدر يشيل كارتين جنب بعض لو فيه مساحة */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 25px;
+  }
+}
+
+/* الموبايل (أقل من 480px) */
+@media (max-width: 480px) {
+  .skills-grid {
+    /* هنا الكارت بياخد عرض الشاشة بالكامل (100%) عشان ميبقاش فيه Scroll بالعرض */
+    grid-template-columns: 1fr; 
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .skill-card {
+    padding: 25px 15px; /* تقليل الحواف الداخلية شوية للموبايل */
+  }
 }
 
 /* تنسيق الكارت نفسه */
