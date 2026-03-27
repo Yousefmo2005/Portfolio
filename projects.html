@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .projects-page {
+        min-height: 100vh;
+        padding: 2rem 1.5rem;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .projects-page-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding-top: 5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .back-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        transition: color 0.3s;
+      }
+      .back-link:hover {
+        color: var(--red);
+      }
+      .projects-page-title {
+        font-size: 2rem;
+        font-weight: 800;
+      }
+      .filters {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+      .search-box {
+        flex: 1;
+        min-width: 200px;
+        position: relative;
+      }
+      .search-box input {
+        width: 100%;
+        padding: 0.75rem 1rem 0.75rem 2.8rem;
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 0.6rem;
+        color: var(--text);
+        font-family: var(--font);
+        font-size: 0.95rem;
+        outline: none;
+        transition: border-color 0.3s;
+      }
+      .search-box input:focus {
+        border-color: rgba(239, 68, 68, 0.4);
+      }
+      .search-box .search-icon {
+        position: absolute;
+        left: 0.9rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--muted);
+      }
+      .lang-select {
+        padding: 0.75rem 1rem;
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 0.6rem;
+        color: var(--text);
+        font-family: var(--font);
+        font-size: 0.95rem;
+        outline: none;
+        cursor: pointer;
+      }
+      .results-count {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+      }
+      .all-projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.2rem;
+      }
+      .no-results {
+        text-align: center;
+        padding: 4rem;
+        color: var(--muted);
+        font-size: 1.1rem;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ─── NAVBAR ─── -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="logo">HA</a>
+        <ul class="nav-links">
+          <li><a href="index.html#hero" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li>
+            <a href="index.html#projects" class="nav-link active">Projects</a>
+          </li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="projects-page">
+      <div class="projects-page-header">
+        <a href="index.html" class="back-link"
+          ><i class="fas fa-arrow-left"></i> Back to Home</a
+        >
+        <h1 class="projects-page-title">
+          All <span class="accent">Projects</span>
+        </h1>
+      </div>
+      
+      <div class="filters">
+        <div class="search-box">
+          <i class="fas fa-search search-icon"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search projects..."
+          />
+        </div>
+        <select class="lang-select" id="langFilter">
+          <option value="">All Languages</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="TypeScript">TypeScript</option>
+          <option value="HTML&CSS">HTML & CSS</option>
+        </select>
+      </div>
+
+      <p class="results-count" id="resultsCount">Showing 9 of 9 projects</p>
+
+      <div class="all-projects-grid" id="projectsGrid">
+        <div class="project-card" data-lang="JavaScript">
+          <div class="project-top">
+            <span class="lang-tag lang-js">JavaScript</span>
+          </div>
+          <h3>Iphone</h3>
+          <p>
+            This project is part of my journey learning JavaScript, where I
+            applied key concepts such as DOM manipulation, event handling, and
+            problem-solving.
+          </p>
+          <a href="https://yousefmo2005.github.io/Iphone/" class="github-btn"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+
+        <div class="project-card" data-lang="JavaScript">
+          <div class="project-top">
+            <span class="lang-tag lang-js">JavaScript</span>
+          </div>
+          <h3>Modern Cars</h3>
+          <p>A car spare parts project designed to offer a smooth and efficient experience for users to explore and purchase automotive components.</p>
+          <a
+            href="https://yousefmo2005.github.io/Modern-Cars/"
+            class="github-btn"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+
+        <div class="project-card" data-lang="JavaScript">
+          <div class="project-top">
+            <span class="lang-tag lang-js">JavaScript</span>
+          </div>
+          <h3>o-clock</h3>
+          <p>This project is part of my journey learning JavaScript, where I applied key concepts such as DOM manipulation, event handling, and problem-solving.</p>
+          <a href="https://yousefmo2005.github.io/o-clock/" class="github-btn"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+
+        <div class="project-card" data-lang="JavaScript">
+          <div class="project-top">
+            <span class="lang-tag lang-js">JavaScript</span>
+          </div>
+          <h3>Restaurant</h3>
+          <p>A restaurant project designed to provide an easy and enjoyable experience for users to explore the menu and place orders smoothly.</p>
+          <a href="https://yousefmo2005.github.io/Restaurant/ " class="github-btn"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+
+        <div class="project-card" data-lang="HTML&CSS">
+          <div class="project-top">
+            <span class="lang-tag lang-html">HTML & CSS</span>
+          </div>
+          <h3>Service Area</h3>
+          <p>Our Service Area</p>
+          <a href="https://yousefmo2005.github.io/Service-Area/" class="github-btn"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+
+        <div class="project-card" data-lang="HTML&CSS">
+          <div class="project-top">
+            <span class="lang-tag lang-html">HTML & CSS</span>
+          </div>
+          <h3>product</h3>
+          <p>A modern product showcase website built with Html and  CSS.</p>
+          <a href="https://yousefmo2005.github.io/product/" class="github-btn"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+        
+      </div>
+      
+      <div class="no-results" id="noResults">
+        No projects found matching your search.
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>
+          © 2026 <span class="accent">Hamza Ali</span>. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      const searchInput = document.getElementById("searchInput");
+      const langFilter = document.getElementById("langFilter");
+      const cards = document.querySelectorAll("#projectsGrid .project-card");
+      const resultsCount = document.getElementById("resultsCount");
+      const noResults = document.getElementById("noResults");
+
+      function filterProjects() {
+        const q = searchInput.value.toLowerCase();
+        const lang = langFilter.value;
+        let visible = 0;
+        cards.forEach((card) => {
+          const name = card.querySelector("h3").textContent.toLowerCase();
+          const desc = card.querySelector("p").textContent.toLowerCase();
+          const cardLang = card.dataset.lang;
+          const matchesQ = name.includes(q) || desc.includes(q);
+          const matchesLang = !lang || cardLang === lang;
+          const show = matchesQ && matchesLang;
+          card.style.display = show ? "" : "none";
+          if (show) visible++;
+        });
+        const total = cards.length;
+        resultsCount.textContent = `Showing ${visible} of ${total} projects`;
+        noResults.style.display = visible === 0 ? "block" : "none";
+      }
+
+      searchInput.addEventListener("input", filterProjects);
+      langFilter.addEventListener("change", filterProjects);
+    </script>
+  </body>
+</html>

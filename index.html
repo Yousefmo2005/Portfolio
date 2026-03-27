@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ─── NAVBAR ─── -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#hero" class="logo">YM</a>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section id="hero" class="hero">
+      <div class="blob blob-tl"></div>
+      <div class="blob blob-br"></div>
+      <div class="hero-content reveal">
+        <p class="hero-sub">WELCOME TO MY PORTFOLIO</p>
+        <h1 class="hero-name">Youssef Mohamed</h1>
+        <h2 class="hero-role">Front-End Developer</h2>
+        <p class="hero-desc">
+          Crafting beautiful, responsive, and user-friendly web experiences with
+          modern technologies
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-solid">Get In Touch</a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about" class="section about-bg">
+      <!--main title-->
+      <h2 class="main-title">About <span class="accent">Me</span></h2>
+      <!--End title-->
+      <div class="section-inner reveal">
+        <div class="about-card">
+          <p>
+            I'm a passionate
+            <span class="accent">Front-End Developer</span> with a keen eye for
+            design and a commitment to creating exceptional user experiences. I
+            specialize in building modern, responsive web applications using
+            cutting-edge technologies.
+          </p>
+          <p>
+            My journey in web development started with a curiosity about how
+            websites work, and it has evolved into a professional career where I
+            continuously learn and adapt to new technologies. I take pride in
+            writing clean, maintainable code and following best practices.
+          </p>
+          <p>
+            When I'm not coding, I enjoy exploring new web technologies,
+            contributing to open-source projects, and staying up-to-date with
+            the latest industry trends. I'm always eager to take on new
+            challenges and collaborate on exciting projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SKILLS ─── -->
+    <section id="skills" class="section skills-bg">
+      <!--main title-->
+      <h2 class="main-title">My <span class="accent">Skills</span></h2>
+      <!--End title-->
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon-box" style="background: #e44d26">
+            <svg viewBox="0 0 512 512" fill="white">
+              <path
+                d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27-97.5-27-6.3-71.9H139l10.5 115.3 84.5 22.9 84.7-22.9 31.6-339.2h-221l-3.9-44.1H312l-3.8 44.1z"
+              />
+            </svg>
+          </div>
+          <h3>HTML5</h3>
+          <p>Semantic markup</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-box" style="background: #264de4">
+            <svg viewBox="0 0 512 512" fill="white">
+              <path
+                d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm313.1 147.5l-12.2 135.2-108.4 30-108.4-30-7-77.2h50.1l3.5 39.1 61.8 17.1 61.8-17.1 6.3-69.7H106.8l-3.6-40.2h206.5l-3.7-40.2H99.6l-3.5-39.1h253.9l-3.9 44.1z"
+              />
+            </svg>
+          </div>
+          <h3>CSS3</h3>
+          <p>Modern styling</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-box" style="background: #f7df1e">
+            <svg viewBox="0 0 448 512" fill="black">
+              <path
+                d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V231.6h41.2v149.8zm111.4 0c0 37.6-20.1 57.6-51.1 57.6-32 0-51.5-16-62.1-37.5l34.1-20.5c7.3 12.1 14.3 21 27.8 21 12 0 19.2-5.4 19.2-17.6 0-11-8.3-14.9-20.1-19.9l-14.6-6.3c-23.7-10-38.6-21.5-38.6-47.1 0-23.3 18.2-46.3 53.2-46.3 24.8 0 43.8 11.1 51.9 25.9l-33.2 20.8c-5.2-10.3-13-16.1-22.8-16.1-9.2 0-14.3 5.2-14.3 12.1 0 10 7 13.6 18.7 18.6l14.6 6.3c28.6 12.2 44.1 23.9 44.1 50.7z"
+              />
+            </svg>
+          </div>
+          <h3>JavaScript ES6</h3>
+          <p>Advanced features</p>
+        </div>
+
+        <div class="skill-card">
+          <div
+            class="skill-icon-box"
+            style="background: #23272f; border: 1px solid #333"
+          >
+            <svg
+              viewBox="-11.5 -10.23174 23 20.46348"
+              fill="none"
+              stroke="#58c4dc"
+              stroke-width="1"
+            >
+              <circle r="2.05" fill="#58c4dc" />
+              <g>
+                <ellipse rx="11" ry="4.2" />
+                <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+                <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+              </g>
+            </svg>
+          </div>
+          <h3>React 19</h3>
+          <p>Component-based UI</p>
+        </div>
+
+        <div class="skill-card">
+          <div
+            class="skill-icon-box"
+            style="background: #000; border: 1px solid #333"
+          >
+            <svg viewBox="0 0 128 128" fill="white">
+              <path
+                d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64 64-28.7 64-64S99.3 0 64 0zm33.5 91.8l-46.7-60.1h-7.1v56.3h7.1V41.9l40.3 52h6.4v-2.1z"
+              />
+            </svg>
+          </div>
+          <h3>Next.js 13</h3>
+          <p>Full-stack framework</p>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon-box" style="background: #0ea5e9">
+            <svg viewBox="0 0 24 24" fill="white">
+              <path
+                d="M12.001 6C13.667 4 15.334 3 17.001 3c3.333 0 6 2.667 6 6 0 1.667-1 3.333-3 5-1.667 1.333-3.334 2.667-5 4l-5-4c-1.666-1.333-3.333-2.667-5-4-2-1.667-3-3.333-3-5 0-3.333 2.667-6 6-6 1.667 0 3.334 1 5 3z"
+              />
+            </svg>
+          </div>
+          <h3>Tailwind CSS</h3>
+          <p>Utility-first CSS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROJECTS ─── -->
+    <section id="projects" class="section about-bg">
+      <!--main title-->
+      <h2 class="main-title">Featured <span class="accent">Projects</span></h2>
+      <!--End title-->
+      <div class="section-inner reveal">
+        <p class="section-sub">Check out my latest work from GitHub</p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-top">
+              <span class="lang-tag lang-js"></span>
+            </div>
+            <h3>EduZone</h3>
+            <p>A professional platform to learn and master modern skills.</p>
+            <a
+              href="https://yousefmo2005.github.io/Project-courses/"
+              class="github-btn"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <span class="lang-tag lang-js"></span>
+            </div>
+            <h3>Market</h3>
+            <p>Your one-stop shop for everything you need.</p>
+            <a
+              href="https://yousefmo2005.github.io/Project-market/"
+              class="github-btn"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+
+          <div class="project-card">
+            <div class="project-top">
+              <span class="lang-tag lang-ts"></span>
+            </div>
+            <h3>UNKNOWN</h3>
+            <p>
+              A modern platform to explore diverse content and visual
+              experiences.
+            </p>
+            <a href="https://yousefmo2005.github.io/proo/" class="github-btn"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+        <div class="center mt-3">
+          <a href="projects.html" class="btn btn-solid btn-arrow"
+            >View All Projects &nbsp;→</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact" class="section skills-bg">
+      <!--main title-->
+      <h2 class="main-title">Get In <span class="accent">Touch</span></h2>
+      <!--End title-->
+      <div class="section-inner reveal">
+        <p class="section-sub">
+          Have a project in mind or want to collaborate? Feel free to reach out
+          through any of these channels
+        </p>
+
+        <div class="contact-grid">
+          <a href="mailto:hamzaaliabdalazez@gmail.com" class="contact-card">
+            <div class="contact-icon-box" style="background: #2563eb">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-val">joom7019@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://wa.me/201142883312" class="contact-card">
+            <div class="contact-icon-box" style="background: #25d366">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div>
+              <p class="contact-label">WhatsApp</p>
+              <p class="contact-val">01142883312</p>
+            </div>
+          </a>
+          <a href="https://github.com/Yousefmo2005" class="contact-card">
+            <div class="contact-icon-box" style="background: #333">
+              <i class="fab fa-github"></i>
+            </div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <p class="contact-val">Yousefmo2005</p>
+            </div>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yousef-mohamed-a74a28388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            class="contact-card"
+          >
+            <div class="contact-icon-box" style="background: #0a66c2">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <p class="contact-val">Yousef Mohamed</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="cta-box">
+          <h3>Let's Build Something Amazing Together</h3>
+          <p>
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision.
+          </p>
+          <a href="mailto:joom7019@gmail.com" class="btn btn-solid"
+            ><i class="fas fa-envelope"></i>&nbsp; Send an Email</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <div class="logo">YM</div>
+          <p>
+            Front-End Developer passionate about creating beautiful and
+            functional web experiences
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect With Me</h4>
+          <div class="social-icons">
+            <a href="https://github.com/Yousefmo2005" class="social-icon"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/yousef-mohamed-a74a28388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              class="social-icon"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://wa.me/201142883312" class="social-icon"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="mailto:joom7019@gmail.com" class="social-icon"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2026 <span class="accent">Yousef Mohamed</span>. All rights
+          reserved. &nbsp;Made with ❤️ using HTML, CSS &amp; Js
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
