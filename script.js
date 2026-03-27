@@ -50,3 +50,19 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
     });
 });
+
+
+// اتأكد إنك مسحت أي تعريف قديم لـ navLinks قبل ما تحط ده
+const toggleBtn = document.getElementById('menu-toggle');
+const navMenu = document.querySelector('.nav-links'); 
+
+toggleBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+
+// عشان لما تدوس على لينك القائمة تقفل لوحدها
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+  });
+});
