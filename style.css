@@ -162,6 +162,54 @@ ul {
 
 
 /* ─── NAVBAR ─── */
+
+/* تنسيق الزرار الافتراضي (مخفي) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333; /* غير اللون حسب تصميمك */
+  transition: 0.3s;
+}
+
+/* للموبايل */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* نظهر الزرار */
+    transition: 0.3s ease;
+  }
+
+  .nav-links {
+    display: none; /* نخفي القائمة الأصلية */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg2);
+    color: white; /* غير الخلفية حسب تصميمك */
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  .nav-links:hover{
+    color: var(--red);
+  }
+  /* كلاس هيتضاف بالـ JS عشان يفتح القائمة */
+  .nav-links.active {
+    display: flex;
+  }
+}
+
 .navbar {
     position: fixed;
     top: 0;
